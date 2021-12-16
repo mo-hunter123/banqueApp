@@ -17,6 +17,9 @@ Banque::Operation::Operation(Devise* Montant, Compte* C):numOperation(++num)
 void Banque::Operation::showDateNum() const
 {
 	this->OpDate->ShowDate(); 
+	cout << "\nMontant: ";
+	this->Montant->afficher();
+	cout << "\n"; 
 	cout << "Num Operation: " << this->num << endl;
-	this->C->consulter(); 
+	//this->C->consulter(); 
 }
